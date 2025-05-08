@@ -18,4 +18,4 @@ cd /home/erdao/SUMOBaseline
 # module purge
 # module load python3.10-anaconda/2023.03
 
-srun python3 scripts/rollouts/gen_submission.py --config=configs/gl/cfg_submission_validation_1006.yml --shard_idx=$SLURM_ARRAY_TASK_ID
+srun python3 src/wosac/gen_submission.py --config=configs/gl/cfg_submission_validation_1006.yml --shard_idx=$SLURM_ARRAY_TASK_ID

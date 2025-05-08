@@ -18,4 +18,4 @@ cd /home/erdao/SUMOBaseline
 # module purge
 # module load python3.10-anaconda/2023.03
 
-srun python3 scripts/rollouts/rollouts_batch.py --config=configs/gl/cfg_rollouts_0223test.yml --batch_idx=$SLURM_ARRAY_TASK_ID
+srun python3 src/wosac/gen_rollouts.py --config=configs/gl/cfg_rollouts_0223test.yml --batch_idx=$SLURM_ARRAY_TASK_ID

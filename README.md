@@ -71,6 +71,9 @@ src
 - `wosac/` provides utility functions for generating rollouts and assembling submissions for the Waymo Open Sim Agent Challenge. Refer to Section 4.3 of our paper.
 
 - `metric/` implements the long-horizon simulation metric we propose (Section 4.4 in our paper) to measure simulation realism over extended durations.
+
+- `utils/` contains code such as visualization and data reading.
+
 `static_context` provide the necessary road networks information, and `dynamic_behavior` setups traffic demand in the simulation - they are the two essential inputs for SUMO. Therefore, to run the complete pipeline, you first generate the road network for a scenario, and then perform simulations using the road network and other raw agent information.
 
 ### Static Context: Generate Road Networks
